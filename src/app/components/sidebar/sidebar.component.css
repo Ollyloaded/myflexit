@@ -1,0 +1,95 @@
+.aside {
+  width: 140px;
+  padding-left: 30px;
+  padding-right: 25px;
+  box-shadow: 8px 0 6px -6px rgb(0 0 0 / 0.2);
+  height: 100%;
+  position: fixed;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo p {
+  color: #332993;
+  font-weight: bold;
+  font-size: 23px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.nav-section {
+  margin-top: 40px;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+ul li {
+  list-style: none;
+  padding: 0px 0px 0px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: #868499;
+}
+
+ul li:first-child a {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: #868499;
+  text-decoration: none;
+}
+
+ul li:nth-child(3) {
+  color: #000000;
+}
+
+ul li:hover {
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.2);
+  cursor: pointer;
+}
+
+ul li:hover p {
+  color: #000000;
+}
+
+ul li:nth-child(3):hover {
+  box-shadow: none;
+}
+
+.svgIcon {
+  fill: #868499;
+}
+
+.svgLink {
+  color: #868499;
+}
+
+.svgPeople {
+  color: #868499;
+}
+
+ul li:hover .svgIcon {
+  fill: #332993;
+}
+
+ul li:hover .svgLink {
+  color: #332993;
+}
+
+ul li:hover .svgPeople {
+  color: #332993;
+}
+
+/*media query*/
+@media screen and (max-width: 768px) {
+  .aside {
+    display: none;
+  }
+}

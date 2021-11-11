@@ -1,0 +1,99 @@
+.grid-container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-gap: 1rem;
+}
+
+.grid-item {
+  height: 250px;
+  position: relative;
+}
+
+.grid-item:hover {
+  cursor: pointer;
+}
+
+.grid-item:hover .btn {
+  opacity: 1;
+}
+
+.grid-item:hover .profile {
+  background: #ffffff;
+}
+
+.grid-item:hover p {
+  color: #000000;
+}
+
+.grid-item:hover .location-icon {
+  fill: #000000;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding-top: 5px;
+  background: none;
+  transition: all 0.3s ease;
+}
+
+.location-icon {
+  fill: #ffffff;
+  padding-left: 5px;
+}
+
+p {
+  margin: 2px;
+  color: #ffffff;
+  padding-left: 5px;
+}
+
+.grid-item .location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 5px;
+}
+
+.location p {
+  font-size: 12px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  opacity: 0;
+  margin-bottom: 5px;
+  transition: all 0.5s ease;
+}
+
+.btn button:first-child {
+  background: #b32f2f;
+  border-radius: 5px;
+  border: 1px solid #b32f2f;
+  padding: 3px;
+}
+
+.btn button:last-child {
+  background: #352c97;
+  border-radius: 5px;
+  border: 1px solid #352c97;
+  padding: 3px;
+}
+
+button {
+  width: 100%;
+}
